@@ -1,7 +1,7 @@
 package main
 
 import (
-	"adv-code-2023/day3"
+	"adv-code-2023/day4"
 
 	"go.uber.org/zap"
 )
@@ -9,5 +9,5 @@ import (
 func main() {
 	logger, _ := zap.NewProduction()
 	zap.ReplaceGlobals(logger)
-	day3.B2("day3/input_b1.txt")
+	day4.B1()
 }
