@@ -22,10 +22,10 @@ func B2(inputPath string) {
 		}
 	}
 	for _, aNaNumbers := range validNumbers {
-		if len(aNaNumbers) == 0 {
-			return
+		if len(aNaNumbers) < 2 {
+			continue
 		}
-		if len(aNaNumbers) != 2 {
+		if len(aNaNumbers) > 2 {
 			fmt.Printf("exception")
 			continue
 		}
